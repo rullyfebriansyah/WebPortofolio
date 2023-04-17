@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald",sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px 200px;
+}
+header {
+  z-index: 999;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+header .brand {
+  color: whitesmoke;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigasi {
+  position: relative;
+}
+
+header .navigasi a {
+  color:whitesmoke;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+header .navigasi a:hover {
+  color: #3a6cf4;
+}
+
+body {
+  min-height: 110vh;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+}
+.home .content1 {
+  width: 600px;
+}
+
+.home .content1 h2 {
+  color: black;
+  font-size: 2em;
+  font-weight: 500;
+  
+}
+
+.home .content1 h2 span {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.animasi-text {
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+}
+
+.animasi-text h3 {
+  color: #3a6cf4;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 1px;
+}
+
+.animasi-text h3:nth-child(1) {
+  animation: text-move 10s infinite;
+}
+
+@keyframes text-move {
+  0% {
+    margin-top: 0;
+  }
+
+  25% {
+    margin-top: -70px;
+  }
+
+  50% {
+    margin-top: -140px;
+  }
+
+  75% {
+    margin-top: -70px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+.btns {
+  background-color: black;
+  color:whitesmoke;
+  text-decoration: none;
+  font-size: 13pt;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.btns:hover {
+  background: white;
+  color: #3a6cf4;
+}
+
+.home .content2 {
+  width: 400px;
+}
+.home .img {
+  border-radius: 50%;
+  width: 30vh;
+  border-style:groove;
+  position: relative;
+  display: flex;
+  margin-left: 150px;
+}
+.about {
+  min-height: 70vh;
+}
+
+.about .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.about .content .col-left {
+  position: relative;
+  width: 30%;
+}
+
+.about .content .col-right {
+  color: whitesmoke;
+  position: relative;
+  width: 50%;
+  margin-right: 20%;
+  margin-top: 15px;
+}
+.about .content .col-right a {
+  color:  #3a6cf4;
+}
+.about .content .col-left .img-card {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+}
+
+.about .content .col-left .img-card img {
+  border-radius: 50%;
+  width: 30vh;
+  position: absolute;
+  margin-left: 20%;
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-title {
+  position: relative;
+  color: black;
+  font-size: 2em;
+  font-weight: 500;
+}
+.project {
+  min-height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+}
+
+.project .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project .content .card {
+  width: 250px;
+  margin: 15px;
+}
+
+.project .content .img-card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.project .content .img-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.project .content .img-card img:hover {
+  transform: scale(1.2);
+}
+.kontak {
+  min-height: 5vh;
+  text-align: center;
+}
+.wrapper i{
+    font-size: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    border-radius: 30px;
+    transition: 0.8s ease-in;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+.wrapper:hover i{
+    opacity: 1;
+}
+.wrapper i:hover{
+    opacity: 1;
+    color: black;
+    background: whitesmoke;
+    box-shadow: 0 5px 80px 0 whitesmoke inset,0 5px 80px 0 whitesmoke,0 5px 80px 0 whitesmoke inset,0 5px 80px 0 whitesmoke;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+  header .brand {
+    color: whitesmoke;
+    font-size: 15pt;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-decoration: none;
+
+  }
+  header .navigasi a {
+    color:whitesmoke;
+    font-size: 10pt;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  .home{
+    min-height: 50vh;
+  }
+  .home .content1 {
+    width: 700px;
+  }
+  .home .content2 {
+    width: 650px;
+  }
+  .home .content1 h2 {
+    color: black;
+    font-size: 13pt;
+    font-weight: 100;
+    
+  }
+  .animasi-text h3 {
+    color: #3a6cf4;
+    font-size: 13pt;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+  }
+  .btns {
+    background-color: black;
+    color:whitesmoke;
+    font-size: 8pt;
+    text-decoration: none;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+  .section-title {
+    position: relative;
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .home .img {
+    border-radius: 50%;
+    width: 15vh;
+    border-style:groove;
+    position: relative;
+    display: flex;
+    margin-left: 5px;
+  }
+  .about{
+    min-height: 20vh;
+  }
+  .about .content .col-left {
+    position: relative;
+    width: 300px;
+  }
+  
+  .about .content .col-right {
+    color: whitesmoke;
+    position: relative;
+    font-size: 8pt;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+  } 
+  .about .content .col-left .img-card img {
+    border-radius: 50%;
+    width: 15vh;
+    position: absolute;
+    margin-left: 5px;
+  }
+  .project .content .card {
+    width: 100px;
+    margin: 5px;
+  }
+  
+  .project .content .img-card {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .project .content .img-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s ease;
+  }
+  .project {
+    min-height: 40vh;
+}
+.wrapper i{
+  font-size: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: 2px solid whitesmoke;
+  border-radius: 30px;
+  transition: 0.8s ease-in;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){  
+  .home{
+    min-height: 50vh;
+  }
+  .home .content1 {
+    width: 500px;
+  }
+  .home .content2 {
+    width: 500px;
+  }
+  .home .content1 h2 {
+    color: black;
+    font-size: 20pt;
+    font-weight: 300;
+    
+  }
+  .home .img {
+    border-radius: 50%;
+    width: 23vh;
+    border-style:groove;
+    position: relative;
+    display: flex;
+    margin-left: 5px;
+  }
+  .about{
+    min-height: 20vh;
+  }
+  .about .content .col-left {
+    position: relative;
+    width: 50%;
+  }
+  
+  .about .content .col-right {
+    color: whitesmoke;
+    position: relative;
+    width: 75%;
+    margin-right: 10px;
+    margin-top: 15px;
+  } 
+  .about .content .col-left .img-card img {
+    border-radius: 50%;
+    width: 15vh;
+    position: absolute;
+    margin-left: 20%;
+  }
+  
+}
